@@ -11,7 +11,7 @@ class Rules:
     def __init__(self,h=4,w=4):
         self.height=h # hauteur grille
         self.width=w # largeur grille
-  
+
 
     def allDead(self):
         """
@@ -29,7 +29,7 @@ class Rules:
         """
         allStates=[]
         # Generate all the combinations as string tuples of length h*w
-        seq = itertools.product("01", repeat=self.height*self.width)
+        seq = itertools.product((True,False), repeat=self.height*self.width)
         for s in seq:
             # Convert to numpy array and reshape to h*w
             arr = np.fromiter(s, np.int8).reshape(self.height,self.width)
