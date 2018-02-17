@@ -5,7 +5,6 @@ Obtenir les états menant à tout mort et executant le jeu de la vie sur chaque
 """
 
 import rules as rl
-import numpy as np
 import time
 
 print("[Forward]")
@@ -20,7 +19,7 @@ for state in r.getAll():
     temp=state
     visited=[] # liste des états visités
     while not end:
-        if np.array_equal(temp,r.allDead()):
+        if r.isDead(temp):
             result.append(state)
             end=True
         elif any((temp==x).all() for x in visited):
