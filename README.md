@@ -1,7 +1,7 @@
 # GameOfLife #
 
 **Title:** GameOfLife  
-**Keywords:** Cellular automaton  
+**Keywords:** cellular automaton  
 **Version:** 0.1  
 **Date:** feb 2018  
 **Authors:** Johann Benerradi, Nicolas Paris, Hishem Moueddene  
